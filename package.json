@@ -1,0 +1,10 @@
+{
+  "type": "module",
+  "dependencies": {
+    "@line/bot-sdk": "^7.5.2",
+    "axios": "^1.4.0",
+    "googleapis": "^118.0.0",
+    "node-cron": "^3.0.2",
+    "puppeteer": "^20.3.0"
+  }
+}
