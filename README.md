@@ -25,7 +25,7 @@ The code is located in '/service/updateGoogleSheet.js'. Acccess the code and add
     
 To start the scraping, you just need to run the start.js using the following command.   
 
-```js
+```
 node start.js
 ```
 Note: Remember to run 'npm install' command before if you haven't done so.    
