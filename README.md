@@ -4,7 +4,7 @@ This is a node.js project which use Puppeteer.js for web scraping and LINE API f
     
 Note: You need a LINE Business account with a Messaging API created to send the scrap-data message to your personal LINE or to everyone following your LINE Business account.    
     
-This is an example architecture, so you will need to add your own puppeteer.js code for the page scraping. The code can be added into 'src/runPuppeteer.js'.    Inside the 'src/runPuppeteer.js' file you will see an example code and these two functions:
+This is an example architecture, so you will need to add your own puppeteer.js code for the page scraping. The code can be added into 'src/runPuppeteer.js'.    Inside the 'runPuppeteer.js' file you will see an example code and these two functions:
             
 ```js
 sendLineMessage();
