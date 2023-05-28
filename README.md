@@ -30,3 +30,30 @@ node start.js
 ```
 Note: Remember to run 'npm install' command before if you haven't done so.    
 You may run schedule.js instead of start.js if you need to scheduling your web-scraping service.    
+
+# How to enable Google Sheets API
+
+1. Go to the Google Cloud Console (https://console.cloud.google.com/).      
+2. Create a new project or select an existing project from the dropdown menu at the top.
+3. In the left sidebar, click on "APIs & Services" and then "Credentials".
+4. Click the "Create credentials" button and select "Service account".
+5. Provide a name for the service account, and optionally add a description.
+6. Under the "Role" dropdown, select "Project" > "Editor" or choose the appropriate role based on your needs. This will grant the necessary permissions to access and modify your Google Sheets.
+7. Skip the "Grant users access to this service account" section (unless you specifically need to grant access to additional users).
+8. Click on the "Continue" button and then "Done" to create the service account.
+9. Find the newly created service account in the "Service Accounts" list and click on the pencil/edit icon next to it.
+10. In the "Keys" tab, click on the "Add Key" button and select "Create new key".
+11. Choose the JSON key type and click "Create". This will download the credentials file (credentials.json) to your computer.
+
+# How to enable LINE Messaging API
+
+1. Create a LINE Developers Account: Go to the LINE Developers website (https://developers.line.biz) and create an account if you don't have one already.
+2. Create a Channel: Once you have logged in to your LINE Developers account, create a new channel for your Messaging API. Click on the "Create new channel" button and select the Messaging API option.
+3. Fill in the Channel Information: Provide the necessary information about your channel, including the channel name, description, and category.
+4. Configure Messaging API Settings: In the Channel settings, go to the "Messaging API" tab and configure the necessary settings for your bot. You can set the basic settings such as default language, time zone, and other options.
+5. Generate Channel Access Token: In the "Messaging API" tab, scroll down to the "Channel access token" section and click on the "Issue" button to generate a new channel access token. This token will be used to authenticate your bot when making API requests.      
+        
+Note: We are not going to use the Webhook, so you don't need to add a Webhook URL. You can even leave the 'Use webhook' option disabled. Though, you must DISABLE these options:        
+1. Allow bot to join group chats
+2. Auto-reply messages
+3. Greeting messages
