@@ -2,7 +2,7 @@ import { google } from 'googleapis';
 
 // Parameters from runPuppeteer.js
 // This parameter is an example, change to your own parameter
-export const updateGoogleSheet = async (overview) => {
+export const updateGoogleSheet = async (example) => {
 
     const auth = new google.auth.GoogleAuth({
       keyFile: './credentials.json',
@@ -18,7 +18,7 @@ export const updateGoogleSheet = async (overview) => {
     const values = [
       // Parameters from runPuppeteer.js
       // This parameter is an example, change to your own parameter
-      [overview.view, overview.comment, overview.like, overview.date],
+      [example.title, example.content, example.url]
     ];
 
     const resource = {
