@@ -25,7 +25,7 @@ export const runPuppeteer = async (user, password) => {
   
   Example of how to log in a website
 
-  Filling the input
+  Filling the input:
   await page.waitForTimeout(2000);
   const email = await page.$('#email');
   await email.type(user);
