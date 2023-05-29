@@ -58,6 +58,11 @@ export const runPuppeteer = async (user, password) => {
     };
 
   });
+  
+  // Example of Capturing Screenshot
+  await page.screenshot({
+    path: 'screenshot.jpg'
+  });
 
   // Send Data to LINE & Google Sheet
   await sendLineMessage(example);
