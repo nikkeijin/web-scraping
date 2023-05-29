@@ -23,15 +23,17 @@ export const runPuppeteer = async (user, password) => {
 
   /* ########## 
   
-  Example of how to log in a website:
+  Example of how to log in a website
 
+  Filling the input
   await page.waitForTimeout(2000);
   const email = await page.$('#email');
   await email.type(user);
   await page.waitForTimeout(1000);
   const pwd = await page.$('#password');
   await pwd.type(password);
-  // Pressing Enter
+
+  Pressing Enter:
   await page.waitForTimeout(1000);
   await Promise.all([
     page.waitForNavigation({ waitUntil: 'networkidle0' }),
