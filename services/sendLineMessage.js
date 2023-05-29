@@ -2,7 +2,7 @@ import { Client } from '@line/bot-sdk';
 
 // Parameters from runPuppeteer.js
 // This parameter is an example, change to your own parameter
-export const sendLineMessage = async (overview) => {
+export const sendLineMessage = async (example) => {
 
     const config = {
       channelSecret: 'ADD_YOUR_CHANNEL_SECRET_FROM_LINE-API',
@@ -18,7 +18,7 @@ export const sendLineMessage = async (overview) => {
           type: 'text',
           // Parameters from runPuppeteer.js
           // The parameters are example, change to your own parameters
-          text: `Views: 「${overview.view}」\n Comments: 「${overview.comment}」\n Likes: 「${overview.like}」\n\n${overview.date}`
+          text: `Title: 「${example.title}」\n\nContent: 「${example.content}」\n\nURL: 「${example.url}」`
         },
       ];
   
