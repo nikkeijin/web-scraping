@@ -11,7 +11,21 @@ export const runPuppeteer = async (user, password) => {
   const page = await browser.newPage();
   await page.goto('https://example.com/');
   await page.setViewport({ width: 1080, height: 1024 });
-
+  
+  // ########## Loggging into the site
+  // Add your own code, this is an example code
+  await page.waitForTimeout(2000);
+  const email = await page.$('#email');
+  await email.type(user);
+  await page.waitForTimeout(1000);
+  const pwd = await page.$('#password');
+  await pwd.type(password);
+  // Pressing Enter
+  await page.waitForTimeout(1000);
+  await Promise.all([
+    page.waitForNavigation({ waitUntil: 'networkidle0' }),
+    page.keyboard.press('Enter')
+  ]);
 
   // ########## Scraping Data from the page
   // Add your own code, this is an example code
@@ -34,8 +48,6 @@ export const runPuppeteer = async (user, password) => {
     };
 
   });
-
-
 
   // ########## Send Data to LINE & Google Sheet
   // This parameter is an example, change to your own parameter
