@@ -53,7 +53,7 @@ You may run schedule.js instead of start.js if you need to scheduling your web-s
 4. Configure Messaging API Settings: In the Channel settings, go to the "Messaging API" tab and configure the necessary settings for your bot. You can set the basic settings such as default language, time zone, and other options.
 5. Generate Channel Access Token: In the "Messaging API" tab, scroll down to the "Channel access token" section and click on the "Issue" button to generate a new channel access token. This token will be used to authenticate your bot when making API requests.      
         
-Note: We are not going to use the Webhook, so you don't need to add a Webhook URL. You can even leave the 'Use webhook' option disabled. Though, you must DISABLE these options:        
+Note: We are not going to use the Webhook, so you don't need to add a Webhook URL. You can even leave the 'Use webhook' option disabled. As for the options below, you MUST DISABLE:        
 1. Allow bot to join group chats
 2. Auto-reply messages
 3. Greeting messages
