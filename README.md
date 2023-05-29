@@ -26,7 +26,7 @@ To start the scraping, you just need to run the start.js using the following com
 ```bash
 node start.js
 ```
-Note: Remember to run 'npm install' command before if you haven't done so.    
+Note: Remember to run 'npm install' command if this is your first time running the application.
 You may run schedule.js instead of start.js if you need to scheduling your web-scraping service.    
 
 # How to enable Google Sheets API
