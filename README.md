@@ -4,7 +4,7 @@ This is a node.js project which use Puppeteer.js for web scraping and LINE API f
           
 # How to use
 
-Inside the 'runPuppeteer.js' file you will see an example code and these two functions:
+Inside the 'runPuppeteer.js' file you will see an example code of how to scrap data using puppeteer.js and these two functions:
             
 ```js
 sendLineMessage();
