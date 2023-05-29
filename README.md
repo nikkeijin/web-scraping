@@ -1,8 +1,7 @@
 # Web-Scraping
 
 This is a node.js project which use Puppeteer.js for web scraping and LINE API for sending the scrap-data to LINE Messenger and Google API to record the scrap-data into Google Sheet.
-    
-This is an example architecture, so you will need to add your own puppeteer.js code for the page scraping. The code can be added into 'src/runPuppeteer.js'.        
+          
 # How to use
 
 Inside the 'runPuppeteer.js' file you will see an example code and these two functions:
