@@ -5,7 +5,7 @@ import { updateGoogleSheet } from '../services/updateGoogleSheet.js';
 /* ########## 
 
 Example of a website with user and password. User and password parameters are from start.js
-You can erase the runPuppeteer() function parameters if you don't need to log-in.
+You can erase the parameters of runPuppeteer() function if you don't need to log-in.
 
 ########## */
 export const runPuppeteer = async (user, password) => {
@@ -23,7 +23,7 @@ export const runPuppeteer = async (user, password) => {
 
   /* ########## 
   
-  Example of how to log in a website
+  Example of how to log in a website using the parameters user and password from runPuppeteer()
 
   Filling the input:
   await page.waitForTimeout(2000);
