@@ -38,7 +38,6 @@ export const runPuppeteer = async (user, password) => {
   await Promise.all([
     page.waitForNavigation({ waitUntil: 'networkidle0' }),
     page.keyboard.press('Enter')
-
   ]); 
   
   ########## */
