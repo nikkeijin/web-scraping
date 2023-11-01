@@ -2,7 +2,7 @@
 
 This is a node.js project which use Puppeteer.js for web scraping and LINE API for sending the scrap-data to LINE Messenger and Google API to record the scrap-data into Google Sheet.
           
-# How to use
+## How to use
 
 Inside the 'runPuppeteer.js' file you will see an example code of how to scrap data using puppeteer.js and these two functions:
             
@@ -28,7 +28,7 @@ node start.js
 Note: Remember to run 'npm install' command if this is your first time running the application.     
 You may run schedule.js instead of start.js if you wish scheduling option for your web-scraping service.    
 
-# How to enable Google Sheets API
+## How to enable Google Sheets API
 
 1. Go to the Google Cloud Console (https://console.cloud.google.com/).      
 2. Create a new project or select an existing project from the dropdown menu at the top.
@@ -42,7 +42,7 @@ You may run schedule.js instead of start.js if you wish scheduling option for yo
 10. In the "Keys" tab, click on the "Add Key" button and select "Create new key".
 11. Choose the JSON key type and click "Create". This will download the credentials file (credentials.json) to your computer.
 
-# How to enable LINE Messaging API
+## How to enable LINE Messaging API
 
 1. Create a LINE Developers Account: Go to the LINE Developers website (https://developers.line.biz) and create an account if you don't have one already.
 2. Create a Channel: Once you have logged in to your LINE Developers account, create a new channel for your Messaging API. Click on the "Create new channel" button and select the Messaging API option.
