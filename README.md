@@ -28,6 +28,14 @@ node start.js
 Note: Remember to run 'npm install' command if this is your first time running the application.     
 You may run schedule.js instead of start.js if you wish scheduling option for your web-scraping service.    
 
+## Troubleshooting
+
+Problem: (node:73451) [DEP0040] DeprecationWarning: The punycode module is deprecated. Please use a userland alternative instead.                    
+Solution: Use Node.js version 20.5.0 or an earlier version.
+
+Problem: 'Error: Could not find Chrome (ver. 113.0.5672.63).'.                    
+Solution: `npm i puppeteer`.
+
 ## How to enable Google Sheets API
 
 1. Go to the Google Cloud Console (https://console.cloud.google.com/).      
