@@ -34,8 +34,8 @@ Problem: (node:73451) [DEP0040] DeprecationWarning: The punycode module is depre
 Solution: Use Node.js version 20.5.0 or an earlier version.
 
 Problem: 'Error: Could not find Chrome (ver. 113.0.5672.63).'.                    
-Solution 1: `npm i puppeteer`.
-Solution 2: `cd ./node_modules/puppeteer` then `npm install`
+Solution 1: `npm i puppeteer`.                    
+Solution 2: `cd ./node_modules/puppeteer` then `npm install`.                    
 
 ## How to enable Google Sheets API
 
